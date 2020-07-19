@@ -12,5 +12,5 @@ main test
 */
 func main() {
 	fmt.Print("Hello World")
-	os.Exit(1)
+	os.Exit(-1)
 }
