@@ -11,7 +11,7 @@ main test
 @author saxing 2020/7/19 19:59
 */
 func main() {
-	fmt.Println(os.Args)
-	fmt.Println("Hello World")
-	os.Exit(1)
+	if len(os.Args) > 1 {
+		fmt.Println("Hello World", os.Args[1])
+	}
 }
