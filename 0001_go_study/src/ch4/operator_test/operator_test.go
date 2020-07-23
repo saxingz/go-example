@@ -21,5 +21,8 @@ func TestCompareArray(t *testing.T) {
 func TestBitClear(t *testing.T) {
 	a := 7 // 0111
 
+	a = a &^ Readable
+	a = a &^ Executable
+
 	t.Log(a&Readable == Readable, a&Writable == Writable, a&Executable == Executable)
 }
