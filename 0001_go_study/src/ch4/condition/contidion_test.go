@@ -20,3 +20,16 @@ func TestSwitchMultiCase(t *testing.T) {
 		}
 	}
 }
+
+func TestSwitchCaseCondition(t *testing.T) {
+	for i := 0; i < 5; i++ {
+		switch {
+		case i%2 == 0:
+			t.Log("Even")
+		case i%2 == 1:
+			t.Log("Odd")
+		default:
+			t.Log("unknown")
+		}
+	}
+}
