@@ -20,6 +20,7 @@ func TestCompareArray(t *testing.T) {
 
 func TestBitClear(t *testing.T) {
 	t.Log(Readable, Writable, Executable)
+	t.Log(3 << 0)
 
 	a := 7 // 0111
 
