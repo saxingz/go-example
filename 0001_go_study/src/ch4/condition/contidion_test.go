@@ -2,6 +2,9 @@ package condition
 
 import "testing"
 
+/**
+@author saxing 2020/7/24 22:44
+*/
 func TestIfMultiSec(t *testing.T) {
 	if a := 1 == 1; a {
 		t.Log("1 == 1")
