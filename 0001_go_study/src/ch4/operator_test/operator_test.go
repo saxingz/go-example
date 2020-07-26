@@ -8,6 +8,11 @@ const (
 	Executable
 )
 
+/**
+operator test
+
+@author saxing 2020/7/26 23:20
+*/
 func TestCompareArray(t *testing.T) {
 	a := [...]int{1, 2, 3, 4}
 	b := [...]int{1, 6, 3, 4}
