@@ -10,7 +10,6 @@ const (
 
 /**
 operator test
-
 @author saxing 2020/7/26 23:20
 */
 func TestCompareArray(t *testing.T) {
