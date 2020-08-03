@@ -30,6 +30,5 @@ func TestBitClear(t *testing.T) {
 
 	a = a &^ Readable
 	a = a &^ Executable
-
 	t.Log(a&Readable == Readable, a&Writable == Writable, a&Executable == Executable)
 }
