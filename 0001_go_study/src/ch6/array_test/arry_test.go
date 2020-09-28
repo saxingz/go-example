@@ -2,6 +2,9 @@ package array_test
 
 import "testing"
 
+/**
+@author saxing 2020/9/28 22:21
+*/
 func TestArrayInit(t *testing.T) {
 	var arr [3]int
 	arr1 := [4]int{1, 2, 3, 4}

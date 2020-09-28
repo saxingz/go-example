@@ -2,6 +2,9 @@ package slice_test
 
 import "testing"
 
+/**
+@author saxing 2020/9/28 22:21
+*/
 func TestSliceInit(t *testing.T) {
 	var s0 []int
 	t.Log(len(s0), cap(s0))
