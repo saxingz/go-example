@@ -20,3 +20,11 @@ func TestSliceInit(t *testing.T) {
 	t.Log(len(s2), cap(s2))
 
 }
+
+func TestSliceGrowing(t *testing.T) {
+	s := []int{}
+	for i := 0; i < 10; i++ {
+		s = append(s, i)
+		t.Log(len(s), cap(s))
+	}
+}
