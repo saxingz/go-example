@@ -53,3 +53,11 @@ func TestSliceShareMemory(t *testing.T) {
 	t.Log(year)
 
 }
+
+func TestSliceComparing(t *testing.T) {
+	a := []int{1, 2, 3, 4}
+	b := []int{1, 2, 3, 4}
+	if a == b {
+		t.Log("equal")
+	}
+}
