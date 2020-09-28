@@ -15,5 +15,8 @@ func TestSliceInit(t *testing.T) {
 	s2 := make([]int, 3, 5)
 	t.Log(len(s2), cap(s2))
 	t.Log(s2[0], s2[1], s2[2])
+	s2 = append(s2, 1)
+	t.Log(s2[0], s2[1], s2[2], s2[3])
+	t.Log(len(s2), cap(s2))
 
 }
