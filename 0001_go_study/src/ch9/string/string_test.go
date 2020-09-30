@@ -37,8 +37,12 @@ func TestStringToRune(t *testing.T) {
 
 func TestStringFn(t *testing.T) {
 	s := "A,B,C"
+	// splits
 	parts := strings.Split(s, ",")
 	for _, part := range parts {
 		t.Log(part)
 	}
+
+	// join
+	t.Log(strings.Join(parts, "-"))
 }
