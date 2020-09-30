@@ -1,6 +1,9 @@
 package string_test
 
-import "testing"
+import (
+	"strings"
+	"testing"
+)
 
 /**
 @author saxing 2020/9/30 21:20
@@ -29,5 +32,13 @@ func TestStringToRune(t *testing.T) {
 	s := "中华人民共和国"
 	for _, c := range s {
 		t.Logf("%[1]c %[1]d", c)
+	}
+}
+
+func TestStringFn(t *testing.T) {
+	s := "A,B,C"
+	parts := strings.Split(s, ",")
+	for _, part := range parts {
+		t.Log(part)
 	}
 }
