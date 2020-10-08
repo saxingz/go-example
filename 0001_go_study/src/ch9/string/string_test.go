@@ -46,3 +46,7 @@ func TestStringFn(t *testing.T) {
 	// join
 	t.Log(strings.Join(parts, "-"))
 }
+
+func TestConv(t *testing.T) {
+
+}
