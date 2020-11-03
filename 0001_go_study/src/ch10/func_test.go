@@ -60,4 +60,6 @@ func Clear() {
 func TestDefer(t *testing.T) {
 	defer Clear()
 	fmt.Println("Start")
+	panic("err")
+	fmt.Println("End")
 }
