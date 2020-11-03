@@ -52,3 +52,12 @@ func TestVarParam(t *testing.T) {
 	t.Log(Sum(1, 2, 3, 4))
 	t.Log(Sum(1, 2, 3, 4, 5))
 }
+
+func Clear() {
+	fmt.Println("clear resources.")
+}
+
+func TestDefer(t *testing.T) {
+	defer Clear()
+	fmt.Println("Start")
+}
