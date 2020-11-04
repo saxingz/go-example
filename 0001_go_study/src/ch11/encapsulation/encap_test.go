@@ -1,4 +1,4 @@
-package encap2
+package encapsulation
 
 import (
 	"fmt"
