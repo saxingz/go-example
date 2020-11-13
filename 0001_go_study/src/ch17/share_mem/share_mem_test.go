@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+/**
+share mem
+
+@author saxing 2020/11/13 23:23
+*/
 func TestCounter(t *testing.T) {
 	counter := 0
 	for i := 0; i < 5000; i++ {
