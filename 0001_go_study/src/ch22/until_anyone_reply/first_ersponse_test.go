@@ -38,8 +38,6 @@ func AllResponse() string {
 		finalRet += <-ch + "\n"
 	}
 	return finalRet
-
-	return <-ch
 }
 
 func TestFirstResponse(t *testing.T) {
