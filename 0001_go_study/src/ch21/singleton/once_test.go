@@ -1,14 +1,11 @@
 package singleton
 
-import (
-	"fmt"
-	"sync"
-)
-
 /**
 create once
-@author saxing 2020/11/15 11:35
+
+@author saxing 2020/11/15 11:36
 */
+
 import (
 	"fmt"
 	"sync"
