@@ -4,7 +4,10 @@ package testing
 test
 @author saxing 2020/11/15 13:21
 */
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSquare(t *testing.T) {
 	inputs := [...]int{1, 2, 3}
@@ -15,4 +18,16 @@ func TestSquare(t *testing.T) {
 			t.Errorf("input is %d, the expected is %d the actual %d", inputs[i], expected[i], ret)
 		}
 	}
+}
+
+func TestErrorInCode(t *testing.T) {
+	fmt.Println("Start")
+	t.Error("Error")
+	fmt.Println("End")
+}
+
+func TestFailInCode(t *testing.T) {
+	fmt.Println("Start")
+	t.Fatal("Error")
+	fmt.Println("End")
 }
